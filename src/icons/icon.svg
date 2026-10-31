@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Map pin with a screw head: your store, fixed in place. -->
+  <rect width="128" height="128" rx="28" fill="#0066b3"/>
+  <path d="M64 114 C64 114 32 80 32 54 A32 32 0 0 1 96 54 C96 80 64 114 64 114 Z" fill="#fff"/>
+  <circle cx="64" cy="54" r="17" fill="#0066b3"/>
+  <rect x="61" y="43" width="6" height="22" rx="1.5" fill="#fff"/>
+  <rect x="53" y="51" width="22" height="6" rx="1.5" fill="#fff"/>
+</svg>

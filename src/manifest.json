@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Screwfixed",
+  "version": "1.0.0",
+  "description": "Stops Screwfix ad links from changing your preferred store by stripping the 'tc' query parameter.",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "host_permissions": ["*://*.screwfix.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Screwfixed",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.screwfix.com/stores/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

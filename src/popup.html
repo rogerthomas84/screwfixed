@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Screwfixed</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Screwfixed</h1>
+  <p class="status">Ad links: <strong>tc</strong> parameter is <span id="mode">removed</span>.</p>
+
+  <form id="form">
+    <label for="storeId">Your store ID</label>
+    <input id="storeId" name="storeId" placeholder="e.g. AB1" autocomplete="off" spellcheck="false">
+
+    <label class="check">
+      <input type="checkbox" id="replaceTc">
+      Replace <code>tc</code> with my store instead of removing it
+    </label>
+
+    <div class="row">
+      <button type="submit">Save</button>
+      <span id="saved" hidden>Saved</span>
+    </div>
+  </form>
+
+  <p class="help">
+    Don't know your store ID? <a href="https://www.screwfix.com/stores" target="_blank">Find your store</a>
+    on Screwfix, open its page, and click the blue <em>Set as my Screwfixed store</em> button.
+    The ID is also in the URL, e.g. <code>/stores/<strong>AB1</strong>/anytown</code>.
+  </p>
+
+  <p id="myStore" hidden><a id="myStoreLink" target="_blank">Open my store page</a></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ A small Chrome extension that stops Screwfix ad links from changing your preferr
 Screwfix's Google Ads links carry a `tc` query parameter that holds a store code, for example:
 
 ```
-https://www.screwfix.com/p/floplast-push-fit-87-5-triple-socket-equal-junction-110mm/12152?tc=MC7&gclsrc=aw.ds&gad_source=1&...
+https://www.screwfix.com/p/some-product/12345?tc=MC7&gclsrc=aw.ds&gad_source=1&...
 ```
 
 When you land on that URL, Screwfix switches your preferred store to `MC7`, which might be a store at the other end of the country. After that, stock, click & collect and prices all show for the wrong branch.

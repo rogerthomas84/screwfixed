@@ -21,6 +21,10 @@ The extension catches every top-level navigation to `screwfix.com` that has a `t
 
 It uses Chrome's [`declarativeNetRequest`](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest) API. The extension never reads page content or browsing history. It can only rewrite Screwfix URLs.
 
+## Privacy
+
+Screwfixed collects nothing. It has no analytics, no tracking and no servers. Your store ID is stored only in Chrome's own settings storage. See the [privacy policy](PRIVACY.md) for full details.
+
 ## Install
 
 Screwfixed isn't on the Chrome Web Store yet, so you load it unpacked:
